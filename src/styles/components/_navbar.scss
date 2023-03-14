@@ -1,0 +1,45 @@
+.contenedor-navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(19, 111, 142);
+
+    .contenido-logo{
+
+        img{
+            width: 7rem;
+            height: 7rem;
+            margin-left: 5rem;
+        }
+    }
+
+    .contenido-navbar{
+        width: 100rem;
+        display: flex;
+        justify-content: space-around;
+        
+
+        a{
+            color: #fff;
+            text-decoration: none;
+            transition: .3s ease;
+            padding: 1rem;
+        }
+
+        a:hover{
+            color: rgb(113, 194, 222);
+            text-decoration: underline;
+        }
+    }
+
+    .reservar-hora-nav{
+        padding: 1rem;
+        background-color: rgb(6, 206, 26);
+        border-radius: 1rem;
+
+        a:hover{
+            color: #000;
+        }
+
+    }
+}

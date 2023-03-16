@@ -1,16 +1,11 @@
 import React from 'react'
-import avatar from '../../img/avatar.jpg';
-import odontogeneral from '../../img/odontologiageneral.jpg';
-import implantologia from '../../img/implantologia.jpg';
-import endodoncia from '../../img/endodoncia.jpg';
-import estetica from '../../img/estetica.jpg';
-import periodoncia from '../../img/periodoncia.jpg';
-import rehabilitacion from '../../img/rehabilitacion.jpg';
 import reservaHora from '../../img/reserva-hora.jpg';
-import PerfilDrOvando from '../../img/PerfilDrOvando.JPG';
 import { Fade } from 'react-reveal';
 import { Link } from 'react-router-dom';
 import 'react-multi-carousel/lib/styles.css';
+import TratamientosInicio from './tratamientos/TratamientosInicio';
+import EspecialistasInicio from './especialistas/EspecialistasInicio';
+import BotonReservar from '../botonReservar/BotonReservar';
 
 export const Inicio = () => {
 
@@ -22,14 +17,12 @@ export const Inicio = () => {
                 <h1>Clinica dental O&T</h1>
             </div>
 
-
-
             <div className='contenido-parrafo-uno'>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, molestias at blanditiis ducimus fuga aliquam. Id corrupti obcaecati quos, architecto error repudiandae dignissimos molestias consequatur sapiente quia itaque, dolorem veritatis!</p>
             </div>
 
 
-
+            {/* Reservar Hora */}
             <div className='contenedor-reservar-hora-inicio'>
                 <h2>Reserva tu hora</h2>
 
@@ -66,111 +59,13 @@ export const Inicio = () => {
                 </div>
             </div>
 
+            <BotonReservar />
+
+            <EspecialistasInicio />
 
 
-            <div className='contenido-parrafo-dos'>
-                <h3>Nuestros Especialistas</h3>
-                <Fade bottom>
-                    <div className='contenido-tarjetas'>
-                        <div className='tarjetas'>
-                            <div className='tarjeta-img-inicio'>
-                                <img src={avatar} alt="tarjeta" />
-                            </div>
-                            <h4>Título</h4>
-                            <div className='parrafo-tarjeta-especialistas'>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, neque. Magnam deserunt enim eaque facilis labore repudiandae debitis a ad, quas illo accusantium quis minima? Vero quasi </p>
-                            </div>
-                        </div>
+            <TratamientosInicio />
 
-
-                        <div className='tarjetas'>
-                            <div className='tarjeta-img-inicio'>
-                                <img src={PerfilDrOvando} alt="tarjeta" />
-                            </div>
-                            <h4>Dr. Pedro Pablo Ovando T.</h4>
-                            <h5>Implantólogo</h5>
-                            <div className='parrafo-tarjeta-especialistas'>
-                                <ul>
-                                    <li>Cirujano Dentista – <span>USS</span></li>
-                                    <li>Diplomado Implantología oral quirúrgica y protésica – <span>USS</span></li>
-                                    <li>Diplomado Experto en implantología digital quirúrgico protésico – <span>UCAM</span></li>
-                                    <li>Aplicación de ácido hialuronico, Bioestimulación con factores de crecimiento autógeno, Tóxina botulínica, Bioplastía facial e Hilos reabsorvibles – <span>ACHEOF</span></li>
-                                </ul>
-                            </div>
-                        </div>
-
-
-                        <div className='tarjetas'>
-                            <div className='tarjeta-img-inicio'>
-                                <img src={avatar} alt="tarjeta" />
-                            </div>
-                            <h4>Título</h4>
-                            <div className='parrafo-tarjeta-especialistas'>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, neque. Magnam deserunt enim eaque facilis labore repudiandae debitis a ad, quas illo accusantium quis minima? Vero quasi </p>
-                            </div>
-                        </div>
-                    </div>
-                </Fade>
-            </div>
-
-
-
-            <div className='contenido-parrafo-tres'>
-                <h2>Tratamientos</h2>
-
-                <div className='contenido-tarjetas-tratamiento-inicio'>
-
-                    <Fade bottom>
-                        <div className='tarjeta-tratamiento-inicio'>
-                            <img src={odontogeneral} alt="odontologia" />
-                            <h3>Odontología General</h3>
-                            <div className='btn-tratamiento-inicio'>
-                                <p>Ver Más</p>
-                            </div>
-                        </div>
-
-                        <div className='tarjeta-tratamiento-inicio'>
-                            <img src={implantologia} alt="odontologia" />
-                            <h3>Implantología</h3>
-                            <div className='btn-tratamiento-inicio'>
-                                <p>Ver Más</p>
-                            </div>
-                        </div>
-
-                        <div className='tarjeta-tratamiento-inicio'>
-                            <img src={endodoncia} alt="odontologia" />
-                            <h3>Endodoncia</h3>
-                            <div className='btn-tratamiento-inicio'>
-                                <p>Ver Más</p>
-                            </div>
-                        </div>
-
-                        <div className='tarjeta-tratamiento-inicio'>
-                            <img src={estetica} alt="odontologia" />
-                            <h3>Estética</h3>
-                            <div className='btn-tratamiento-inicio'>
-                                <p>Ver Más</p>
-                            </div>
-                        </div>
-
-                        <div className='tarjeta-tratamiento-inicio'>
-                            <img src={periodoncia} alt="odontologia" />
-                            <h3>Periodoncia</h3>
-                            <div className='btn-tratamiento-inicio'>
-                                <p>Ver Más</p>
-                            </div>
-                        </div>
-
-                        <div className='tarjeta-tratamiento-inicio'>
-                            <img src={rehabilitacion} alt="odontologia" />
-                            <h3>rehabilitación Oral</h3>
-                            <div className='btn-tratamiento-inicio'>
-                                <p>Ver Más</p>
-                            </div>
-                        </div>
-                    </Fade>
-                </div>
-            </div>
 
 
         </div >

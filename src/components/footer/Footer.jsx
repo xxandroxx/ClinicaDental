@@ -54,7 +54,7 @@ export const Footer = () => {
                                     <path d="M15 3a6 6 0 0 1 6 6" />
                                 </svg>
 
-                                <p>652222222</p>
+                                <p>+56658853080</p>
                             </div>
                         </div>
                     </div>

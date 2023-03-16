@@ -6,7 +6,7 @@ import { Navbar } from './components/navbar/Navbar'
 
 export const Clinica = () => {
   return (
-    <div>
+    <div className='contenedor-clinica'>
         <Navbar />
         <Banner />
         <Inicio />
